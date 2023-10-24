@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DailyNewsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DailyNewsApp" parent="Base.Theme.DailyNewsApp" />
+
+    <style name="MarqueeMainTextSmall">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="MarqueeMainTextMediumLight">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+</resources>

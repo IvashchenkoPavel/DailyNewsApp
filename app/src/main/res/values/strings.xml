@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DailyNewsApp</string>
+    <string name="daily_news">DailyNews</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="movies">Movies</string>
+    <string name="sport_matches">Sport Matches</string>
+    <string name="settings">Settings</string>
+    <string name="no_data_from_server">No data from server</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="matches">Matches</string>
+    <string name="more">More</string>
+    <string name="team_name">Team Name:</string>
+    <string name="city_name">City Name:</string>
+    <string name="vs">VS</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_12_dp"
+    card_view:cardBackgroundColor="@color/cv_item"
+    card_view:cardCornerRadius="@dimen/margin_20_dp"
+    card_view:cardElevation="@dimen/margin_8_dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/logo_first_team"
+        android:layout_width="@dimen/margin_100_dp"
+        android:layout_height="@dimen/margin_100_dp"
+        android:layout_marginVertical="@dimen/margin_4_dp"
+        android:layout_marginStart="@dimen/margin_8_dp"
+        android:background="@drawable/round_corners_movie_item"
+        android:padding="@dimen/margin_12_dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/movie_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_from_server"
+        android:layout_marginStart="@dimen/margin_8_dp"
+        android:textColor="@color/cv_tv_item"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_first_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_first_team"
+        app:layout_constraintTop_toTopOf="@+id/logo_first_team" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

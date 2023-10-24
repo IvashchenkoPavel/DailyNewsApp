@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movies">
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.example.dailynewsapp.fragments.MoviesFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/movies_fragment" >
+        <action
+            android:id="@+id/action_home2_to_explore"
+            app:destination="@id/matches" />
+        <action
+            android:id="@+id/action_movies_to_movies_detail"
+            app:destination="@id/movies_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/matches"
+        android:name="com.example.dailynewsapp.fragments.MatchesFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/movies_fragment" >
+        <action
+            android:id="@+id/action_explore_to_more"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_matches_to_matches_detail"
+            app:destination="@id/matches_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.dailynewsapp.fragments.SettingsFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/movies_fragment" />
+
+    <fragment
+        android:id="@+id/matches_detail"
+        android:name="com.example.dailynewsapp.fragments.DetailMatchesFragment"
+        android:label="fragment_detail_matches"
+        tools:layout="@layout/detail_matches_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/movies_detail"
+        android:name="com.example.dailynewsapp.fragments.DetailMoviesFragment"
+        android:label="fragment_detail_movies"
+        tools:layout="@layout/detail_movies_fragment" >
+    </fragment>
+</navigation>

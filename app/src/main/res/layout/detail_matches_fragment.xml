@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey">
+
+
+    <ImageView
+        android:id="@+id/firstTeamLogo"
+        android:layout_width="@dimen/margin_200_dp"
+        android:layout_height="@dimen/margin_200_dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/margin_8_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/secondTeamLogo"
+        android:layout_width="@dimen/margin_200_dp"
+        android:layout_height="@dimen/margin_200_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_8_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/firstTeamName"
+        style="@style/MarqueeMainTextMediumLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:textSize="@dimen/text_size_20"
+        app:layout_constraintBottom_toTopOf="@+id/firstTeamLogo"
+        app:layout_constraintEnd_toEndOf="@+id/firstTeamLogo"
+        app:layout_constraintStart_toStartOf="@+id/firstTeamLogo" />
+
+    <TextView
+        style="@style/MarqueeMainTextMediumLight"
+        android:id="@+id/firstTeamCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/firstTeamName"
+        app:layout_constraintEnd_toEndOf="@+id/firstTeamName"
+        app:layout_constraintStart_toStartOf="@+id/firstTeamName" />
+
+    <TextView
+        style="@style/MarqueeMainTextMediumLight"
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textStyle="italic"
+        android:textSize="@dimen/text_size_60"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/secondTeamLogo"
+        app:layout_constraintEnd_toStartOf="@+id/firstTeamLogo"
+        app:layout_constraintTop_toTopOf="@+id/firstTeamLogo" />
+
+    <TextView
+        android:id="@+id/secondTeamName"
+        style="@style/MarqueeMainTextMediumLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:textSize="@dimen/text_size_20"
+        app:layout_constraintEnd_toEndOf="@+id/secondTeamLogo"
+        app:layout_constraintStart_toStartOf="@+id/secondTeamLogo"
+        app:layout_constraintTop_toBottomOf="@+id/secondTeamLogo" />
+
+    <TextView
+        style="@style/MarqueeMainTextMediumLight"
+        android:id="@+id/secondTeamCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/secondTeamName"
+        app:layout_constraintStart_toStartOf="@+id/secondTeamName"
+        app:layout_constraintTop_toBottomOf="@+id/secondTeamName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

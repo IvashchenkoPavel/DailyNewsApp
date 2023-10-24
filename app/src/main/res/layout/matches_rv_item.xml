@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#E6E6E6"
+    card_view:cardCornerRadius="@dimen/margin_20_dp"
+    android:layout_marginHorizontal="@dimen/margin_8_dp"
+    card_view:cardElevation="@dimen/margin_8_dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo_first_team"
+        android:layout_width="@dimen/margin_100_dp"
+        android:layout_height="@dimen/margin_100_dp"
+        android:paddingStart="@dimen/margin_8_dp"
+        android:paddingTop="@dimen/margin_12_dp"
+        android:paddingBottom="@dimen/margin_12_dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/team_name"
+        android:textStyle="italic"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_first_team_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logo_first_team"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/tv_first_team_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/logo_first_team"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/city_name"
+        app:layout_constrainedWidth="true"
+        style="@style/MarqueeMainTextSmall"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/first_team_city"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/logo_first_team"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/first_team_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        style="@style/MarqueeMainTextSmall"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/logo_first_team" />
+
+    <ImageView
+        android:id="@+id/logo_second_team"
+        android:layout_width="@dimen/margin_100_dp"
+        android:layout_height="@dimen/margin_100_dp"
+        android:paddingStart="@dimen/margin_8_dp"
+        android:paddingTop="@dimen/margin_12_dp"
+        android:paddingBottom="@dimen/margin_12_dp"
+        android:src="@drawable/upload"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_name"
+        android:textStyle="italic"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_second_team_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_second_team"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/tv_second_team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_second_team"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_name"
+        android:textStyle="italic"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/second_team_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_second_team"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        style="@style/MarqueeMainTextSmall"
+        android:id="@+id/second_team_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_second_team"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

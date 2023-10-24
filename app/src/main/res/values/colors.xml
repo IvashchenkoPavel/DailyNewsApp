@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FF9800</color>
+    <color name="light_yellow">#EFCB97</color>
+    <color name="dark_grey">#484848</color>
+    <color name="light_grey">#BCB6B6</color>
+    <color name="red">#F61505</color>
+    <color name="red_tv">#8E2A0B</color>
+    <color name="beige">#ACA2A1</color>
+    <color name="cv_item">#C67500</color>
+    <color name="cv_tv_item">#814D00</color>
+</resources>
